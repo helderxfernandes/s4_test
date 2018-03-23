@@ -13,9 +13,14 @@ jobs:
 
     working_directory: /var/www/html
 
+    notify:
+      webhooks:
+        # A list of hook hashes, containing the URL field
+        - url: https://hooks.slack.com/services/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
+
     steps:
       - checkout
-asasdad
+
       # Download and cache dependencies
       - restore_cache:
           keys:
