@@ -27,9 +27,9 @@ jobs:
           - v1-dependencies-
 
       # Download and install composer #HF
-- run: curl -sS https://getcomposer.org/installer | php
-- run: mv composer.phar /usr/local/bin/composer.phar
-- run: alias composer='/usr/local/bin/composer.phar'
+      - run: curl -sS https://getcomposer.org/installer | php
+      - run: mv composer.phar /usr/local/bin/composer.phar
+      - run: alias composer='/usr/local/bin/composer.phar'
       - run: composer install -n --prefer-dist
 
       - save_cache:
