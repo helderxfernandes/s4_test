@@ -11,12 +11,7 @@ jobs:
         environment:
           APP_ENV: test
 
-    working_directory: ~/repo
-
-    notify:
-      webhooks:
-        # A list of hook hashes, containing the URL field
-        - url: https://hooks.slack.com/services/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
+    working_directory: /var/www/html
 
     steps:
       - checkout
