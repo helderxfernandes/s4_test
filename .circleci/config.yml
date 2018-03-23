@@ -11,7 +11,7 @@ jobs:
         environment:
           APP_ENV: test
 
-    working_directory: ~/repo
+    working_directory: /var/www/html
 
     notify:
       webhooks:
